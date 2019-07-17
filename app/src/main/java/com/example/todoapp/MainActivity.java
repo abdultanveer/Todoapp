@@ -3,6 +3,7 @@ package com.example.todoapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 //MainActivity = view no biz logic in it-- notice board
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     @Override
     public void setText(String text) {
+        TextView resTextView = findViewById(R.id.textViewresult);
+        resTextView.setText(text);//ff
 
     }
 }
