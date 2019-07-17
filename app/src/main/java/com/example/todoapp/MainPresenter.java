@@ -12,7 +12,7 @@ public class MainPresenter implements MainContract.Presenter, TodoDataSource.Get
     public MainPresenter(MainActivity mainActivity) {
 
         view = mainActivity;//13
-        repository = new TodoRepository();
+        repository = new TodoRepository(mainActivity);
     }
 
     @Override
@@ -21,6 +21,11 @@ public class MainPresenter implements MainContract.Presenter, TodoDataSource.Get
         view.showToast();//14
         repository.getTodoNote(this);//aa
 
+    }
+
+    @Override
+    public void setData(TodoNote note) {
+        repository.setData(note);
     }
 
     @Override
