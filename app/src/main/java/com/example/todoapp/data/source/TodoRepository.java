@@ -27,4 +27,9 @@ public class TodoRepository implements TodoDataSource{
     public void setData(TodoNote note) {
         localTodoDataSource.setData(note);
     }
+
+    @Override
+    public void getNotes(GetNotes callback) {
+        localTodoDataSource.getNotes(callback);
+    }
 }

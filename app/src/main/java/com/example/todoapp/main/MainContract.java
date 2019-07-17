@@ -1,4 +1,4 @@
-package com.example.todoapp;
+package com.example.todoapp.main;
 
 import com.example.todoapp.data.TodoNote;
 

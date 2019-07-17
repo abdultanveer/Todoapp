@@ -1,4 +1,4 @@
-package com.example.todoapp;
+package com.example.todoapp.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.todoapp.R;
 import com.example.todoapp.data.TodoNote;
 
 //MainActivity = view no biz logic in it-- notice board

@@ -23,4 +23,10 @@ public class LocalDataSource implements TodoDataSource {
         dao.openDb();
         dao.createRow(note.getTitle(),note.getSubtitle());
     }
+
+    @Override
+    public void getNotes(GetNotes callback) {
+        dao.openDb();
+        dao.getNotes(callback);
+    }
 }
